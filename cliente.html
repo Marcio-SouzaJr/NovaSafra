@@ -17,22 +17,7 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
   </head>
   <body class="" style="background-color: hsl(0, 0%, 96%)">
     <div class="container">
@@ -40,9 +25,8 @@
         <img
           class="d-block mx-auto mb-4"
           src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/256/external-leaf-agriculture-and-farmer-kiranshastry-lineal-color-kiranshastry.png"
-          alt=""
+          alt="logo nova safra"
           width="72"
-          height="72"
         />
         <h2>Cadastro de Clientes</h2>
         <p class="lead">
@@ -51,18 +35,20 @@
           harum?
         </p>
       </div>
-
       <div class="row">
         <div
           class="col-md-8 m-auto bg-white card shadow p-3 mb-2 bg-body-tertiary rounded"
         >
+
+        <!-- Inicio dados basico de cadastro -->
+
           <h4 class="mb-3">Dados Cadastrais</h4>
           <form class="needs-validation" novalidate>
             <div class="row">
               <div class="col-md-2 mb-3">
                 <label for="id">ID</label>
                 <input
-                  type="number"
+                  type="text"
                   class="form-control text-center"
                   id="id"
                   placeholder="120"
@@ -71,45 +57,43 @@
                 />
               </div>
               <div class="col-md-10 mb-3">
-                <label for="nome-completo">Nome</label>
+                <label for="nome">Nome Reduzido</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="nome-completo"
-                  placeholder="Nome do CPF ou CNPJ"
+                  id="nome"
+                  placeholder="Nome Reduzido"
                   value=""
                   required
                 />
-                <div class="invalid-feedback">Valid last name is required.</div>
+                <div class="invalid-feedback">Nome invalido</div>
               </div>
             </div>
             <div class="mb-3">
-              <label for="nome">Nome Reduzido</label>
+              <label for="nome-completo">Nome Completo</label>
               <div class="input-group">
                 <div class="input-group-prepend"></div>
                 <input
                   type="text"
                   class="form-control"
-                  id="nome"
-                  placeholder="Nome"
+                  id="nome-completo"
+                  placeholder="Nome do CPF ou CNPJ"
                   required
                 />
                 <div class="invalid-feedback" style="width: 100%">
-                  Your username is required.
+                  Nome invalido
                 </div>
               </div>
             </div>
             <div class="mb-3">
-              <label for="email">Email</label>
+              <label for="email">E-mail</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
-                placeholder="you@example.com"
+                placeholder="email@exemplo.com"
               />
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
+              <div class="invalid-feedback">E-mail invalido</div>
             </div>
             <div class="mb-4">
               <label for="telefone"
@@ -124,10 +108,9 @@
                 required
               />
               <div class="invalid-feedback">
-                Please enter your shipping Telefone.
+                Telefone invalido.
               </div>
             </div>
-
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <div class="input-group-text">
@@ -158,10 +141,11 @@
                 type="text"
                 class="form-control"
                 aria-label="Text input with radio button"
+                placeholder="Somente numeros"
               />
             </div>
             <div class="mb-3">
-              <label for="email">Inscrição Estadual</label>
+              <label for="Inscricao">Inscrição Estadual</label>
               <input
                 type="text"
                 class="form-control"
@@ -169,10 +153,13 @@
                 placeholder="99999999"
               />
               <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
+                Inscricao estadual invalida.
               </div>
             </div>
             <hr class="mb-4" />
+
+            <!-- Inicio seleçao de setores -->
+
             <h4 class="mb-3">Setor</h4>
             <div class="row">
               <div class="custom-control custom-checkbox col-md-4 mb-3">
@@ -227,7 +214,8 @@
               </div>
             </div>
             <hr class="mb-4" />
-            <h4 class="mb-3">Endereço</h4>
+            <!-- Inicio endereço de cobrança -->
+            <h4 class="mb-3">Endereço de Cobrança</h4>
             <div class="row">
               <div class="col-md-4 mb-3">
                 <label for="municipio">Municipio</label>
@@ -249,9 +237,6 @@
                   placeholder="PE"
                   required
                 />
-                <div class="invalid-feedback">
-                  Credit card number is required
-                </div>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="cep">CEP</label>
@@ -262,22 +247,18 @@
                   placeholder="00000000"
                   required
                 />
-                <div class="invalid-feedback">
-                  Credit card number is required
-                </div>
               </div>
               <div class="col-md-12 mb-3">
-                <label for="cc-expiration">Logradouro</label>
+                <label for="logradouro">Logradouro</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="cc-expiration"
+                  id="logradouro"
                   placeholder="Sitio Granja Nova Safra"
                   required
                 />
-                <div class="invalid-feedback">Expiration date required</div>
               </div>
-              <div class="custom-control custom-checkbox col-md-10 mb-4">
+              <div class="custom-control custom-checkbox col-md-10 mb-2">
                 <input
                   type="checkbox"
                   class="custom-control-input"
@@ -289,26 +270,27 @@
                 </label>
               </div>
             </div>
-
+            <hr class="mb-4">
+            <!-- Inicio Endereço de faturamento -->
             <div class="row">
               <div class="col-md-4 mb-3">
-                <label for="municipio">Municipio</label>
+                <label for="municipio-faturamento">Municipio</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="municipio"
+                  id="municipio-faturamento"
                   placeholder="Municipio"
                   required
                   disabled
                 />
               </div>
               <div class="col-md-4 mb-3">
-                <label for="estado">Estado</label>
+                <label for="estado-faturamento">Estado</label>
                 <span class="text-muted">(Abreviação)</span>
                 <input
                   type="text"
                   class="form-control"
-                  id="estado"
+                  id="estado-faturamento"
                   placeholder="PE"
                   required
                   disabled
@@ -318,11 +300,11 @@
                 </div>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="cep">CEP</label>
+                <label for="cep-faturamento">CEP</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="cep"
+                  id="cep-faturamento"
                   placeholder="00000000"
                   required
                   disabled
@@ -332,16 +314,15 @@
                 </div>
               </div>
               <div class="col-md-12 mb-3">
-                <label for="logradouro">Logradouro</label>
+                <label for="logradouro-faturamento">Logradouro</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="logradouro"
+                  id="logradouro-faturamento"
                   placeholder="Sitio Granja Nova Safra"
                   required
                   disabled
                 />
-                <div class="invalid-feedback">Expiration date required</div>
               </div>
             </div>
             <hr class="mb-5" />
