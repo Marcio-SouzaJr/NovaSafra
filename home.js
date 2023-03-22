@@ -9,4 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   fornecedores.onclick = () => {
     window.open("fornecedor.html", "_self");
   };
+
+  clientes.onclick = () => {
+    window.open("cliente.html", "_self")
+  }
+
+  
 });
