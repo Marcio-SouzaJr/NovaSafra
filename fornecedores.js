@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const fabricas = document.querySelector("#fabricas");
-    // const email = document.querySelector("#email");
+    const produtos = document.querySelector("#produtos");
   
     fabricas.onclick = () => {
       window.open("fabrica.html", "_self");
+    };
+
+    produtos.onclick = () => {
+      window.open("produto.html", "_self");
     };
   });
   

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/256/external-leaf-agriculture-and-farmer-kiranshastry-lineal-color-kiranshastry.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>Nova Safra - Cadastro de Vendas</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+      <div class="py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/256/external-leaf-agriculture-and-farmer-kiranshastry-lineal-color-kiranshastry.png"
+          alt="logo nova safra"
+          width="72"
+        />
+        <h2>Cadastro de Vendas</h2>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ullam
+          corporis quod magni maxime similique rem necessitatibus quam nemo
+          harum?
+        </p>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-8 m-auto bg-white card shadow p-3 mb-2 bg-body-tertiary rounded "
+        >
+          <!-- Inicio dados basico de cadastro -->
+
+          <h4 class="mb-3">Dados da Venda</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row align-items-center">
+              <div class="col-md-2 mb-3">
+                <label for="contrato">Contrato</label>
+                <input
+                  type="text"
+                  class="form-control text-center"
+                  id="contrato"
+                  placeholder="3165"
+                  value=""
+                  disabled
+                />
+              </div>
+              <div class=" w-75 mb-3">
+                  <label for="nome">Fabrica</label>
+                <select class="form-select" id="nome">
+                  <option selected>Selecionar Fabrica</option>
+                  <option value="1">Oleoplan Nordeste</option>
+                  <option value="2">Cargill Barreiras</option>
+                  <option value="3">Cargil Rio Verde</option>
+                </select>
+              </div>
+            </div>
+            <hr class="mb-4" />
+            <!-- Inicio endereço de cobrança -->
+            <h4 class="mb-3">Níveis de Garantia</h4>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="proteina"
+                  >Proteina<span class="text-muted">(Percentual)</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="proteina"
+                  placeholder="Proteina"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="umidade">Umidade</label>
+                <span class="text-muted">(Percentual)</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="umidade"
+                  placeholder="Umidade"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="solubilidade">Solubilidade</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="solubilidade"
+                  placeholder="Solubilidade"
+                  required
+                />
+              </div>
+            </div>
+            <!-- Botao de Cadastro -->
+            <hr class="mb-5" />
+            <div align="center">
+              <button
+                class="btn btn-primary btn-lg btn-block px-5"
+                type="submit"
+              >
+                Cadastrar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="my-1 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2023 Nova Safra - Agronegócios LTDA</p>
+      </footer>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
