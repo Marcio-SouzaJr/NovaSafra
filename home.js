@@ -14,5 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open("cliente.html", "_self")
   }
 
+  vendas.onclick = () => {
+    window.open("venda.html", "_self")
+  }
+
+  embarques.onclick = () => {
+    window.open("embarque.html", "_self")
+  }
   
 });
